@@ -1,5 +1,5 @@
-import kieranhardwick from "./kieranhardwick.svg";
-import backgroundGradient from "./background-gradient.svg";
+import kieranhardwick from "./kieranhardwick.png";
+import backgroundGradient from "./background-gradient.png";
 
 export { 
     kieranhardwick,

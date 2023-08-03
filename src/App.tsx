@@ -1,25 +1,20 @@
-import { useState } from 'react'
-import Hero from './components/Hero'
-import Navbar from './components/Navbar'
+import Hero from './components/Hero';
+import Navbar from './components/Navbar';
 import styles from "./style";
 
+import { BrowserRouter as Router } from 'react-router-dom';
+
 function App() {
-
   return (
-    <div className="bg-background w-full overflow-hidden">
-      <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-        <div className={``}>
-          <Navbar />
-        </div>
-      </div>
-
-      <div className={`bg-primary ${styles.flexStart}`}>
-        <div className={``}>
+    <Router>
+      <div className="h-[2000px] relative font-sans">
+        <Navbar />
+        <div className={`bg-background ${styles.flexStart}`}>
           <Hero />
         </div>
       </div>
-    </div>
+    </Router>
   )
 }
 
-export default App
+export default App;

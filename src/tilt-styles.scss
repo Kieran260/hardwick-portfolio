@@ -1,0 +1,35 @@
+.tilt-class {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+    font-family: Arial, sans-serif;
+  }
+
+  
+  .parallax-effect-glare-scale {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-45deg, #FF9C54, #621ABE);
+
+    width: 700px;
+    height: 350px;
+
+    border-radius: 20px;
+  
+    transform-style: preserve-3d;
+  
+    .inner-element {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 35px;
+        font-style: italic;
+        transform: translateZ(60px);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
+        border-radius: 20px;
+        border: none;
+    }
+  }

@@ -39,15 +39,15 @@ const Hero = () => {
         >
             
             <div className={`${styles.boxWidth} flex flex-col`}>
-                <h1 className="text-white text-6xl sm:text-7xl text-center shadow-current font-bold mx-4 ">Kieran Hardwick</h1>
-                <h2 className="text-white text-md xs:text-lg text-center shadow-current font-light pb-4 text-white/50 tracking-widest">Software Developer</h2>
+                <h1 className="text-white text-6xl sm:text-7xl text-center font-bold mx-4 drop-shadow-xl">Kieran Hardwick</h1>
+                <h2 className="text-white text-md xs:text-lg text-center font-light pb-4 text-white/50 tracking-widest">Software Developer</h2>
                 <div className="flex w-full justify-center items-center px-4 py-8">
                     <Tilt
                         transitionSpeed={2000}
                         className="parallax-effect-glare-scale"
                         perspective={2500}
                         glareEnable={false}
-                        scale={isLargeScreen ? 1.05 : 1.0}
+                        scale={isLargeScreen ? 1.1 : 1.0}
                         gyroscope={true}
 
                     >

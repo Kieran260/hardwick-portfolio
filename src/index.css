@@ -160,6 +160,13 @@
       slide-top 1s ease-out 0.5s forwards;
 }
 
+.appear-slide-top-half {
+  opacity: 0;
+  animation: 
+      fade-in 0.5s ease-out forwards, 
+      slide-top 0.5s ease-out forwards;
+}
+
 .fade-in-1s {
   animation:
       fade-in ease-out 1s forwards;
@@ -169,4 +176,8 @@
   opacity: 0;
   animation:
       fade-in 1s ease-out 0.5s forwards;
+}
+
+.hidden-0 {
+  opacity: 0;
 }

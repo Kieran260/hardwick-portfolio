@@ -34,9 +34,9 @@ module.exports = {
         primary: "#00040f",
         secondary: "#00f6ff",
         background: "#161616",
+        background2: "#1a1a1a",
         dimWhite: "rgba(255, 255, 255, 0.7)",
         dimBlue: "rgba(9, 151, 124, 0.1)",
-
       },
       fontFamily: {
         'sans': ["Inter", "Poppins", "sans-serif"],
@@ -47,9 +47,25 @@ module.exports = {
       ss: "620px",
       sm: "768px",
       md: "1060px",
-      lg: "1200px",
+      lg: "1275px",
       xl: "1700px",
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+    require('tailwindcss-pseudo-elements'),
+    function({ addUtilities }) {
+      addUtilities({
+        '.empty-content': {
+          content: "''",
+        },
+      }, ['before'])
+    }
+  ],
+  variants: {
+    extend: {
+      borderWidth: ['before'],
+      gradientColorStops: ['before'],
+    },
+  },
 };

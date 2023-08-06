@@ -1,5 +1,6 @@
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
+import Skills from './components/Skills';
 import styles from "./style";
 
 import { BrowserRouter as Router } from 'react-router-dom';
@@ -7,10 +8,11 @@ import { BrowserRouter as Router } from 'react-router-dom';
 function App() {
   return (
     <Router>
-      <div className="h-[2000px] relative font-sans">
+      <div className="relative font-sans">
         <Navbar />
-        <div className={`bg-background ${styles.flexStart}`}>
+        <div className={`bg-background ${styles.flexStart} flex flex-col`}>
           <Hero />
+          <Skills />
         </div>
       </div>
     </Router>

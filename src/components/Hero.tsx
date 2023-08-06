@@ -6,7 +6,6 @@ import { kieranhardwick, backgroundGradient } from '../assets';
 import "../tilt-styles.scss";
 
 const Hero = () => {
-    // Tailwind's 'md' breakpoint is 768px
     const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 768);
 
     useEffect(() => {
@@ -31,10 +30,9 @@ const Hero = () => {
     }
 
     return (
-        
         <section 
             id="home" 
-            className={`flex flex-col items-center w-screen pt-[50px] pb-[150px] z-[50]`} // add z-index lower than Navbar
+            className={`flex flex-col items-center w-screen pt-[50px] pb-[150px]`}
             style={{backgroundImage: `url(${backgroundGradient})`, backgroundSize: '1400px 100%', backgroundPosition: 'center', backgroundPositionY: 'center', backgroundRepeat: 'no-repeat', backdropFilter: 'blur(4px)'}}
         >
             

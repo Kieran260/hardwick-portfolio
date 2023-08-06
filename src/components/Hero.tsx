@@ -7,6 +7,8 @@ import "../tilt-styles.scss";
 
 const Hero = () => {
     const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 768);
+    const [manualTilt, setManualTilt] = useState(true);
+    const [tiltAngles, setTiltAngles] = useState({ x: 20, y: 0 });
 
     useEffect(() => {
         const handleResize = () => {
@@ -21,6 +23,22 @@ const Hero = () => {
         }
     }, []);
 
+    useEffect(() => {
+        const timeoutId = setTimeout(() => {
+            setTiltAngles({ x: 0, y: 0 }); // Reset angles to 0
+        }, 500); // Start transitioning after 500 ms
+        
+        const transitionEndTimeout = setTimeout(() => {
+            // Disable manual tilt after the transition completes
+            setManualTilt(false);
+        }, 1500); // Completely transition after 2000 ms
+        
+        return () => {
+            clearTimeout(timeoutId);
+            clearTimeout(transitionEndTimeout);
+        };
+    }, []);
+
     const handleTouchStart = () => {
         document.body.style.overflow = 'hidden';
     }
@@ -32,14 +50,14 @@ const Hero = () => {
     return (
         <section 
             id="home" 
-            className={`flex flex-col items-center w-screen pt-[50px] pb-[150px]`}
+            className={`fade-in-1s flex flex-col items-center w-screen min-h-[750px] pt-[50px] pb-[200px]`}
             style={{backgroundImage: `url(${backgroundGradient})`, backgroundSize: '1400px 100%', backgroundPosition: 'center', backgroundPositionY: 'center', backgroundRepeat: 'no-repeat', backdropFilter: 'blur(4px)'}}
         >
             
             <div className={`${styles.boxWidth} flex flex-col`}>
-                <h1 className="text-white text-6xl sm:text-7xl text-center font-bold mx-4 drop-shadow-xl">Kieran Hardwick</h1>
-                <h2 className="text-white text-md xs:text-lg text-center font-light pb-4 text-white/50 tracking-widest">Software Developer</h2>
-                <div className="flex w-full justify-center items-center px-4 py-8">
+                <h1 className="appear-slide-top text-white text-6xl sm:text-7xl text-center font-bold mx-4 drop-shadow-xl">Kieran Hardwick</h1>
+                <h2 className="appear-slide-top text-white text-md xs:text-lg text-center font-light pb-4 text-white/50 tracking-widest">Software Developer</h2>
+                <div className="fade-in-1s-delay flex w-full justify-center items-center px-4 py-8">
                     <Tilt
                         transitionSpeed={2000}
                         className="parallax-effect-glare-scale"
@@ -47,7 +65,8 @@ const Hero = () => {
                         glareEnable={false}
                         scale={isLargeScreen ? 1.1 : 1.0}
                         gyroscope={true}
-
+                        tiltAngleXManual={manualTilt ? tiltAngles.x : undefined}
+                        tiltAngleYManual={manualTilt ? tiltAngles.y : undefined}
                     >
                         <div className="hidden inner-element" onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
                             <img 

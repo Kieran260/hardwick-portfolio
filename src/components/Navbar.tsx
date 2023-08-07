@@ -24,7 +24,7 @@ function CustomLink({ to, children }: CustomLinkProps) {
 
 const Navbar = () => {
     return (
-        <nav className={`w-full flex py-5 justify-between items-center bg-transparent text-white ${styles.paddingX}`}>
+        <nav className={`w-full flex py-5 justify-between items-center bg-transparent text-white border-b border-white/20 ${styles.paddingX}`}>
             <div className="pl-2">
                 <CustomLink to="/">Logo</CustomLink>
             </div>
@@ -32,16 +32,15 @@ const Navbar = () => {
                 {/* Mobile menu button */}
             </div>
             <div className="md:block hidden text-sm">
-                <CustomLink to="/home">Home</CustomLink>
+                <CustomLink to="/">Home</CustomLink>
                 <CustomLink to="/work">Work</CustomLink>
                 <CustomLink to="/about">About</CustomLink>
-                <CustomLink to="/contact">Contact</CustomLink>
             </div>
             <div className="flex flex-row gap-2">
-                <a href="https://github.com/" target="_blank" rel="noreferrer" className="hover:shadow-xl transition-colors">
+                <a href="https://github.com/kieran260" target="_blank" rel="noreferrer" className="hover:shadow-xl transition-colors">
                     <BsGithub className="h-6 w-6 mx-1 text-white/75 hover:text-white" />
                 </a>
-                <a href="https://linkedin.com/" target="_blank" rel="noreferrer" className="hover:shadow-xl transition-colors">
+                <a href="https://www.linkedin.com/in/kieran-hardwick-986b56195/" target="_blank" rel="noreferrer" className="hover:shadow-xl transition-colors">
                     <BsLinkedin className="h-6 w-6 mx-1 text-white/75 hover:text-white" />
                 </a>
             </div>

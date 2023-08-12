@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
-import styles from '../style'
+import styles from '../../style'
 import Tilt from 'react-parallax-tilt';
-import { kieranhardwick, backgroundGradient } from '../assets';
+import { kieranhardwick, backgroundGradient } from '../../assets';
 
-import "../tilt-styles.scss";
+import "../../tilt-styles.scss";
 
 const Hero = () => {
     const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 768);

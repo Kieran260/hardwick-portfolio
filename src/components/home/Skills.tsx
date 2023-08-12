@@ -1,11 +1,5 @@
-import styles from '../style'
-import SkillBadge from './ui/skill-badge'
-import { AiFillHtml5 } from 'react-icons/ai';
-import { FaCss3Alt, FaReact, FaJava, FaSwift, FaPython, FaAws, FaNodeJs } from 'react-icons/fa';
-import { SiNextdotjs, SiSpringboot, SiJunit5 } from 'react-icons/si'; 
-import { BiLogoTypescript, BiLogoJavascript, BiLogoFirebase, BiLogoGit, BiLogoTailwindCss } from 'react-icons/bi';
-import { GrMysql } from 'react-icons/gr';
-import { DiPostgresql } from 'react-icons/di';
+import styles from '../../style'
+import SkillBadge from '.././ui/skill-badge'
 import { useEffect, useState, useRef } from "react";
 
 

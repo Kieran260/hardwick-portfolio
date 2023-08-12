@@ -1,7 +1,7 @@
-import Hero from './components/Hero';
+import Hero from './components/home/Hero';
 import Navbar from './components/Navbar';
-import Skills from './components/Skills';
-import Projects from './components/Projects';
+import Skills from './components/home/Skills';
+import Projects from './components/home/Projects';
 import styles from "./style";
 
 import { BrowserRouter as Router } from 'react-router-dom';

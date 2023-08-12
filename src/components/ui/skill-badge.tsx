@@ -26,13 +26,13 @@ const iconMapping: Record<string, JSX.Element> = {
     PostgreSQL: <DiPostgresql />,
     AWS: <FaAws />,
     Git: <BiLogoGit />,
-    NodeJS: <FaNodeJs />,
+    Node: <FaNodeJs />,
     NextJS: <SiNextdotjs />,
     JUnit: <SiJunit5 />,
     Figma: <FaFigma className="p-[1px]"/>,
     Photoshop: <SiAdobephotoshop className="p-[1px]"/>,
     'Spring Boot': <SiSpringboot />,
-    'Swift UI': <DiSwift />
+    SwiftUI: <DiSwift />
 };
 
 const SkillBadge: React.FC<SkillBadgeProps> = ({ skillName, className }) => {

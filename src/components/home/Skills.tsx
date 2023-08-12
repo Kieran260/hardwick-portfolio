@@ -135,7 +135,7 @@ const Skills = () => {
                 <h1 className="text-white text-sm font-normal mb-2">Tools & Frameworks</h1>
                 <div className="grid grid-cols-6 gap-2">
                     <SkillBadge className="col-span-2" skillName='Git' />
-                    <SkillBadge className="col-span-2" skillName='NodeJS' />
+                    <SkillBadge className="col-span-2" skillName='Node' />
                     <SkillBadge className="col-span-2" skillName='NextJS' />
                     <SkillBadge className="col-span-3" skillName='JUnit' />
                     <SkillBadge className="col-span-3" skillName='Spring Boot' />

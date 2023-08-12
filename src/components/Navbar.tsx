@@ -2,6 +2,7 @@ import React from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import styles from '../style';
+import { khLogoWhite } from '../assets';
 
 interface CustomLinkProps {
     to: string;
@@ -24,10 +25,12 @@ function CustomLink({ to, children }: CustomLinkProps) {
 
 const Navbar = () => {
     return (
-        <nav className={`w-full flex py-5 justify-between items-center bg-transparent text-white border-b border-white/20 ${styles.paddingX}`}>
-            <div className="pl-2">
-                <CustomLink to="/">Logo</CustomLink>
-            </div>
+        <nav className={`w-full flex py-2 justify-between items-center bg-transparent text-white border-b border-white/20 ${styles.paddingX}`}>
+           
+            <CustomLink to="/">
+                <img src={khLogoWhite} className="h-6 hover:cursor-pointer" alt="Logo" />
+            </CustomLink>
+            
             <div className="px-2 cursor-pointer md:hidden">
                 {/* Mobile menu button */}
             </div>

@@ -4,6 +4,8 @@ import beatsbinCover from "./beatsbin-cover.png";
 import fastTrakCover from "./fasttrak-cover.png";
 import stecCover from "./stec-cover.png";
 import iosCover from "./ios-cover.png";
+import khLogoWhite from "./kh-logo-white.png";
+
 
 export { 
     kieranhardwick,
@@ -11,5 +13,6 @@ export {
     beatsbinCover,
     fastTrakCover,
     stecCover,
-    iosCover
+    iosCover,
+    khLogoWhite
 };

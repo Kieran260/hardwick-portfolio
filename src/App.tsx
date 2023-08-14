@@ -4,10 +4,23 @@ import HomePage from './components/home/HomePage';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ProjectsPage from './components/projects/ProjectsPage';
 import BeatsbinDetails from './components/projects/details/BeatsbinDetails';
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="relative font-sans ">
         <div className={`flex flex-col ${styles.flexCenter}`}>
           

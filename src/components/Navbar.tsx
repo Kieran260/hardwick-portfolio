@@ -11,33 +11,38 @@ interface CustomLinkProps {
 
 function CustomLink({ to, children }: CustomLinkProps) {
     const { pathname } = useLocation();
-    const isActive = pathname === to;
+    const isActive = 
+        (to === '/' && pathname === to) || 
+        (to !== '/' && pathname.startsWith(to));
 
     return (
         <Link
             to={to}
-            className={`p-2 ${isActive ? 'text-white' : 'text-white/50'} mx-2 transition-colors hover:text-white`}
+            className={`p-2 ${isActive ? 'text-white' : 'text-white/50'} rounded-full px-4 transition-colors hover:text-white text-[14px] font-sans `}
         >
             {children}
         </Link>
     );
 }
 
+
+
 const Navbar = () => {
     return (
-        <nav className={`w-full flex py-2 justify-between items-center bg-transparent text-white border-b border-white/20 ${styles.paddingX}`}>
+        <nav className={`w-full flex py-5 justify-between items-center bg-background text-white ${styles.paddingX} ${styles.boxWidth}`}>
            
-            <CustomLink to="/">
+            <Link to="/">
                 <img src={khLogoWhite} className="h-6 hover:cursor-pointer" alt="Logo" />
-            </CustomLink>
+            </Link>
             
-            <div className="px-2 cursor-pointer md:hidden">
+            <div className="px-2 cursor-pointer sm:hidden">
                 {/* Mobile menu button */}
             </div>
-            <div className="md:block hidden text-sm">
+            <div className="sm:block hidden text-sm">
                 <CustomLink to="/">Home</CustomLink>
-                <CustomLink to="/work">Work</CustomLink>
+                <CustomLink to="/projects">Projects</CustomLink>
                 <CustomLink to="/about">About</CustomLink>
+                <CustomLink to="/contact">Contact</CustomLink>
             </div>
             <div className="flex flex-row gap-2">
                 <a href="https://github.com/kieran260" target="_blank" rel="noreferrer" className="hover:shadow-xl transition-colors">

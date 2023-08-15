@@ -6,7 +6,7 @@ import ProjectCardSt from '../ui/project-card-stec'
 
 const Projects = () => {
   return (
-    <section className={`flex flex-col bg-background items-center w-screen py-[100px] ${styles.paddingX}`}>
+    <section className={`flex flex-col bg-background items-center w-full py-[100px] ${styles.paddingX}`}>
       <div className={`${styles.boxWidth} flex flex-col`}>
         <h1 className="text-white bg-clip-text text-2xl font-bold tracking-wide mb-[50px] text-center">Recent Projects</h1>
           <div className="py-4 gap-4 grid grid-cols-8 w-full">

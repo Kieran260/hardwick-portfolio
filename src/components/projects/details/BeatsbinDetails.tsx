@@ -8,10 +8,10 @@ const BeatsbinDetails = () => {
 
 
     return (
-        <div className={`bg-background ${styles.flexStart} flex flex-col w-[100vw] justify-center items-center h-full border-t border-white/20`}>
-            <div className={`${styles.boxWidth} flex flex-col md:flex-row w-full border-b border-white/20`}>
+        <div className={`bg-background ${styles.flexStart} flex flex-col w-[100%] justify-center items-center h-full border-t border-white/20`}>
+            <div className={`${styles.boxWidth} flex flex-col md:flex-row w-full border-white/20`}>
                 {/* Main Content */}
-                <div className="flex flex-col md:flex-row w-full ">
+                <div className="flex flex-col md:flex-row w-full">
                     {/* Left Side */}
                     <div className={`flex flex-col bg-background items-start py-8 ${styles.paddingX} w-full md:w-2/5 md:h-[100vh] md:overflow-y-auto md:sticky top-0`}>
                         <div className="text-white/50 hover:text-white/75 hover:cursor-pointer bg-clip-text text-sm font-light tracking-wide py-2 w-full inline-flex gap-2 items-center"><HiArrowLeft /> Back to Projects</div>
@@ -136,7 +136,7 @@ const BeatsbinDetails = () => {
 
 
             </div>
-            <div className="bg-background w-full h-[500px]">
+            <div className="bg-background2 w-full h-[500px]">
 
             </div>
         </div>

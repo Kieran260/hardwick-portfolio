@@ -75,7 +75,7 @@ const Skills = () => {
   const isVisible4 = isLargeScreen ? largeThresh4 : smallThresh4;
 
   return (
-    <section className={`flex flex-col bg-background items-center w-screen py-[100px] border-b border-white/20 ${styles.paddingX}`}>
+    <section className={`flex flex-col bg-background items-center w-full py-[100px] border-b border-white/20 ${styles.paddingX}`}>
       <h1 className="text-white bg-clip-text text-2xl font-bold tracking-wide mb-[50px]">Skills</h1>
       <div className={`${styles.boxWidth} grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 w-[1000px] items-center font-normal text-lg`}>
 

@@ -49,9 +49,7 @@ function App() {
             </div>
           } />
           <Route path="/projects/beatsbin" element={
-            <div className={`${styles.boxWidth}`}>
               <BeatsbinDetails />
-            </div>
           } />
 
         </Routes>

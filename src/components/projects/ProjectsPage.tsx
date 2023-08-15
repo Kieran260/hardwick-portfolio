@@ -7,8 +7,8 @@ import ProjectCardSt from '../ui/project-card-stec';
 
 const ProjectsPage = () => {
     return (
-        <div className={`bg-background ${styles.flexStart} flex flex-col`}>
-            <div className={`flex flex-col bg-background items-center w-screen py-8 ${styles.paddingX}`}>
+        <div className={`bg-background items-center flex flex-col`}>
+            <div className={`flex flex-col bg-background items-center w-screen py-8 ${styles.paddingX} ${styles.boxWidth}`}>
                 <div className="text-white bg-clip-text text-2xl font-bold tracking-wide w-full">All Projects</div>
 
                 <div className="py-4 gap-4 grid grid-cols-8 w-full">

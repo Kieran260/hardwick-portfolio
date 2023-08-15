@@ -50,7 +50,7 @@ const Hero = () => {
     return (
         <section 
             id="home" 
-            className={`will-change-auto border-b border-white/20 fade-in-1s flex flex-col items-center w-screen min-h-[750px] pt-[50px] pb-[200px]`}
+            className={`will-change-auto border-b border-white/20 fade-in-1s flex flex-col items-center w-full min-h-[750px] pt-[50px] pb-[200px]`}
             style={{backgroundImage: `url(${backgroundGradient})`, backgroundSize: '1400px 100%', backgroundPosition: 'center', backgroundPositionY: 'center', backgroundRepeat: 'no-repeat', backdropFilter: 'blur(4px)'}}
         >
             

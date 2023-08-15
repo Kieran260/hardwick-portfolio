@@ -50,14 +50,14 @@ const Hero = () => {
     return (
         <section 
             id="home" 
-            className={`will-change-auto border-b border-white/20 fade-in-1s flex flex-col items-center w-full min-h-[750px] pt-[50px] pb-[200px]`}
+            className={`will-change-auto border-b border-white/20 fade-in-1s flex flex-col items-center w-full min-h-[100vh] pt-[50px] pb-[200px]`}
             style={{backgroundImage: `url(${backgroundGradient})`, backgroundSize: '1400px 100%', backgroundPosition: 'center', backgroundPositionY: 'center', backgroundRepeat: 'no-repeat', backdropFilter: 'blur(4px)'}}
         >
             
             <div className={`${styles.boxWidth} flex flex-col`}>
                 <h1 className="will-change-auto	 appear-slide-top text-white text-6xl sm:text-7xl text-center font-bold mx-4 drop-shadow-xl">Kieran Hardwick</h1>
                 <h2 className="will-change-auto	 appear-slide-top text-white text-md xs:text-lg text-center font-light pb-4 text-white/50 tracking-widest">Software Developer</h2>
-                <div className="will-change-auto fade-in-1s-delay flex w-full justify-center items-center px-4 py-8">
+                <div className="will-change-auto fade-in-1s-delay flex w-full justify-center items-center px-4 py-8 mt-8">
                     <Tilt
                         transitionSpeed={2000}
                         className="parallax-effect-glare-scale"

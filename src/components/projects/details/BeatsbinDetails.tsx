@@ -103,13 +103,12 @@ const BeatsbinDetails = () => {
                         </div>
 
                         <h1 className="text-white bg-clip-text text-2xl font-bold tracking-wide w-full mt-8 mb-2 ">Features</h1>
-                        <p className="text-white/50 font-light mb-4 w-full">Below is the list of our core features which we planned out before starting development.</p>
+                        <p className="text-white/50 font-light mb-4 w-full">Below is the list of core features we planned during our requirements analysis.</p>
                         <ul className="text-white/50 font-light mb-2 w-full">
-                            <li className="mt-2"><b className="font-bold">Users: </b>secure authentication and account profile with settings</li>
-                            <li className="mt-2"><b className="font-bold">Tracks: </b>create with custom metadata, store associated files (e.g. cover art) inside each track</li>
-                            <li className="mt-2"><b className="font-bold">Bins: </b>create with custom metadata, add tracks, share to a public URL, manage visibility settings</li>
-                            <li className="mt-2"><b className="font-bold">Contacts: </b>create and manage, create groups for categorized file sharing</li>
-                            <li className="mt-2"><b className="font-bold">Sharing: </b>share bins to a unique link, share via email directly to contacts or a group of contacts</li>
+                            <li className="mt-2"><b className="font-bold">Users:</b> Secure login and customizable account settings.</li>
+                            <li className="mt-2"><b className="font-bold">Tracks: </b>Create and manage tracks, upload and download files, store all associated files (e.g. cover art) inside each track.</li>
+                            <li className="mt-2"><b className="font-bold">Bins:</b> Create, manage, and share bins with customizable metadata and privacy settings.</li>
+                            <li className="mt-2"><b className="font-bold">Sharing:</b> Generate unique links for external bin access and downloads.</li>
                         </ul>
 
 

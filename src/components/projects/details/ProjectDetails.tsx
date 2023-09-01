@@ -1,7 +1,7 @@
 import React from 'react';
 import { HiArrowLeft } from 'react-icons/hi';
 import styles from '../../../style';
-import { beatsbinTracks, beatsbinFilter, beatsbinUpload } from '../../../assets';
+import { beatsbinTracks } from '../../../assets';
 import { beatsbinData } from "../../../data/projectsData"; // Update the import path accordingly
 import { useParams } from 'react-router-dom';
 

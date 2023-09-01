@@ -1,22 +1,7 @@
 import styles from '../../style'
 import SkillBadge from '.././ui/skill-badge'
-import { useEffect, useState, useRef } from "react";
 
 const Skills = () => {
-  const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 768);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsLargeScreen(window.innerWidth > 768);
-    };
-
-    window.addEventListener('resize', handleResize);
-
-    // Cleanup the event listener on unmount
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    }
-  }, []);
 
   return (
     <section className={`flex flex-col bg-background items-center w-full py-[100px] border-b border-white/20 ${styles.paddingX}`}>

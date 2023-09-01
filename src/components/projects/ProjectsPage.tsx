@@ -12,7 +12,7 @@ const ProjectsPage = () => {
                 <div className="text-white bg-clip-text text-2xl font-bold tracking-wide w-full">All Projects</div>
 
                 <div className="py-4 gap-4 grid grid-cols-8 w-full">
-                    <ProjectCard className="col-span-8 sm:col-span-4 lg:col-span-2" name="test" />
+                    <ProjectCard className="col-span-8 sm:col-span-4 lg:col-span-2" name="beatsbin" />
                     <ProjectCardFt className="col-span-8 sm:col-span-4 lg:col-span-2" name="test" />
                     <ProjectCardSt className="col-span-8 sm:col-span-4 lg:col-span-2" name="test" />
                     <ProjectCardIos className="col-span-8 sm:col-span-4 lg:col-span-2" name="test" />

@@ -22,6 +22,10 @@
     }
   
     .inner-element {
+        will-change: transform;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+
         display: flex;
         flex-direction: column;
         justify-content: center;

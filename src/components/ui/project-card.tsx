@@ -9,11 +9,11 @@ interface ProjectCardProps {
   badges?: JSX.Element[];
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ className }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ className, name }) => {
   const navigate = useNavigate();
 
   const handleCardClick = () => {
-    navigate("/projects/beatsbin");
+    navigate(`/projects/${name.toLowerCase()}`);
   };
 
   return (

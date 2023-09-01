@@ -3,37 +3,21 @@ import styles from "./style";
 import HomePage from './components/home/HomePage';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ProjectsPage from './components/projects/ProjectsPage';
-import BeatsbinDetails from './components/projects/details/BeatsbinDetails';
+import ProjectDetails from './components/projects/details/ProjectDetails'; // Renamed to make it more generic
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-
-function ScrollToTop() {
-  const { pathname } = useLocation();
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
-
-  return null;
-}
 
 function App() {
   return (
     <Router>
-      <ScrollToTop />
       <div className="relative font-sans ">
         <div className={`flex flex-col ${styles.flexCenter}`}>
-          
           <Navbar />
         </div>
 
         <Routes>
-          <Route path="/" element={
-            <HomePage />
-          } />
-          <Route path="/projects" element={
-            <ProjectsPage />
-          } />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/projects" element={<ProjectsPage />} />
           <Route path="/about" element={
             <div className={`flex flex-col ${styles.flexCenter}`}>
               <div className={`${styles.boxWidth}`}>
@@ -48,14 +32,11 @@ function App() {
               </div>
             </div>
           } />
-          <Route path="/projects/beatsbin" element={
-              <BeatsbinDetails />
-          } />
-
+          <Route path="/projects/:projectName" element={<ProjectDetails />} />
         </Routes>
       </div>
     </Router>
-  )
+  );
 }
 
 export default App;

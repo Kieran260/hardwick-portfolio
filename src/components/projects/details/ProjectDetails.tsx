@@ -21,6 +21,11 @@ const ProjectDetails: React.FC = () => {
     const { name, subTitle, technologies, details, description } = projectData;
     const { about, features, report } = description;
 
+    function handleBackButton(): void {
+        //navigate back to projects page with a full refresh
+        window.location.href = '/projects';
+    }
+
     return (
         <div className={`bg-background ${styles.flexStart} flex flex-col w-[100%] justify-center items-center h-full`}>
             <div className={`${styles.boxWidth} flex flex-col md:flex-row w-full border-white/20`}>
@@ -28,7 +33,7 @@ const ProjectDetails: React.FC = () => {
                 <div className="flex flex-col md:flex-row w-full">
                     {/* Left Side */}
                     <div className={`flex flex-col bg-background items-start py-8 ${styles.paddingX} w-full md:w-2/5 md:h-[100vh] md:overflow-y-auto md:sticky top-0`}>
-                        <div className="text-white/50 hover:text-white/75 hover:cursor-pointer bg-clip-text text-sm font-light tracking-wide py-2 w-full inline-flex gap-2 items-center">
+                        <div onClick={handleBackButton} className="text-white/50 hover:text-white/75 hover:cursor-pointer bg-clip-text text-sm font-light tracking-wide py-2 w-full inline-flex gap-2 items-center">
                             <HiArrowLeft /> Back to Projects
                         </div>
                         <h1 className="text-white bg-clip-text text-4xl font-bold tracking-wide w-full py-2">{name}</h1>

@@ -3,15 +3,15 @@ import styles from "./style";
 import HomePage from './components/home/HomePage';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ProjectsPage from './components/projects/ProjectsPage';
-import ProjectDetails from './components/projects/details/ProjectDetails'; // Renamed to make it more generic
-import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import ProjectDetails from './components/projects/details/ProjectDetails';
 
 function App() {
   return (
     <Router>
       <div className="relative font-sans ">
-        <Navbar />
+        <div className={`flex flex-col ${styles.flexCenter} border-b border-white/20`}>
+          <Navbar />
+        </div>
 
         <Routes>
           <Route path="/" element={<HomePage />} />

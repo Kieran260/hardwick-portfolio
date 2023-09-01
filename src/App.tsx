@@ -11,9 +11,7 @@ function App() {
   return (
     <Router>
       <div className="relative font-sans ">
-        <div className={`flex flex-col ${styles.flexCenter}`}>
-          <Navbar />
-        </div>
+        <Navbar />
 
         <Routes>
           <Route path="/" element={<HomePage />} />

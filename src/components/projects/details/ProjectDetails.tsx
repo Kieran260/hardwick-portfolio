@@ -22,7 +22,7 @@ const ProjectDetails: React.FC = () => {
     const { about, features, report } = description;
 
     return (
-        <div className={`bg-background ${styles.flexStart} flex flex-col w-[100%] justify-center items-center h-full border-t border-white/20`}>
+        <div className={`bg-background ${styles.flexStart} flex flex-col w-[100%] justify-center items-center h-full`}>
             <div className={`${styles.boxWidth} flex flex-col md:flex-row w-full border-white/20`}>
                 {/* Main Content */}
                 <div className="flex flex-col md:flex-row w-full">

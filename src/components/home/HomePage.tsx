@@ -6,9 +6,11 @@ import Skills from './Skills'
 const HomePage = () => {
   return (
     <div className={`bg-background ${styles.flexStart} flex flex-col`}>
-        <Hero />
-        <Skills />
-        <Projects />
+      <Hero />
+      <Skills />
+
+
+      <Projects />
     </div>
   )
 };

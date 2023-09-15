@@ -1,5 +1,5 @@
 import kieranhardwick from "./kieranhardwick.png";
-import backgroundGradient from "./background-gradient.png";
+import backgroundGradient from "./background-gradient.jpg";
 import beatsbinCover from "./beatsbin-cover.png";
 import fastTrakCover from "./fasttrak-cover.png";
 import stecCover from "./stec-cover.png";

@@ -23,7 +23,6 @@
 }
 
 
-
 .text-gradient {
   background: radial-gradient(
     64.18% 64.18% at 71.16% 35.69%,
@@ -92,8 +91,8 @@
 
 @-webkit-keyframes slide-top {
   0% {
-    -webkit-transform: translateY(40px);
-    transform: translateY(40px);
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
   }
   100% {
     -webkit-transform: translateY(0);
@@ -103,8 +102,8 @@
 
 @keyframes slide-top {
   0% {
-    -webkit-transform: translateY(40px);
-    transform: translateY(40px);
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
   }
   100% {
     -webkit-transform: translateY(0);
@@ -156,16 +155,17 @@
 .appear-slide-top {
   opacity: 0;
   animation: 
-      fade-in 1s ease-out 0.5s forwards, 
-      slide-top 1s ease-out 0.5s forwards;
+      fade-in 0.5s ease-out 0.5s forwards, 
+      slide-top 0.5s ease-out 0.5s forwards;
 }
 
-.appear-slide-top-half {
+.appear-slide-top-delay {
   opacity: 0;
   animation: 
-      fade-in 0.5s ease-out forwards, 
-      slide-top 0.5s ease-out forwards;
+      fade-in 0.5s ease-out 1s forwards, 
+      slide-top 0.5s ease-out 1s forwards;
 }
+
 
 .fade-in-1s {
   animation:
@@ -180,4 +180,55 @@
 
 .hidden-0 {
   opacity: 0;
+}
+
+.tilt-class {
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh;
+  font-family: Arial, sans-serif;
+}
+
+.parallax-effect-glare-scale {
+  transition: transform 1.5s ease-out;
+  -webkit-transition: transform 1.5s ease-out;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(-45deg, #FF9C54, #621ABE);
+  padding: 20px 25px;
+  border-radius: 20px;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+
+
+
+
+}
+
+@media (max-width: 450px) {
+  .parallax-effect-glare-scale {
+      padding: 15px 18.75px;
+  }
+}
+
+
+.inner-element {
+  will-change: transform;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  font-style: italic;
+  transform: translateZ(60px);
+  -webkit-transform: translateZ(60px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+  border: none;
 }

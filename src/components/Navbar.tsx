@@ -2,7 +2,6 @@ import React from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import styles from '../style';
-import { khLogoWhite } from '../assets';
 
 interface CustomLinkProps {
     to: string;

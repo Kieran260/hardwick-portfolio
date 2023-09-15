@@ -4,37 +4,26 @@ import { AiOutlineFileText } from 'react-icons/ai'
 
 const Skills = () => {
 
-  const copyToClipboard = (text: string) => {
-    const el = document.createElement('textarea');
-    el.value = text;
-    document.body.appendChild(el);
-    el.select();
-    document.execCommand('copy');
-    document.body.removeChild(el);
-    // You can add a notification here to inform the user that the email has been copied.
-  };
-
-
   return (
     <section className={`flex flex-col bg-background items-center w-full py-[100px] border-b border-white/20 ${styles.paddingX}`}>
 
 
       <div className={`${styles.boxWidth} flex flex-col lg:flex-row justify-between gap-8 gap-y-16 w-full`}>
         <div className="flex flex-col flex-grow max-w-1/5">
-          <h1 className="text-white bg-clip-text text-2xl font-bold tracking-wide mb-8">Welcome</h1>
-          <p className="text-gray-400 text-md font-normal mb-4">
+          <h3 className="text-blue-400 font-semibold text-sm tracking-wide mb-4">About Me</h3>
+          <h1 className="text-white bg-clip-text text-3xl font-bold tracking-wide mb-4">Welcome</h1>
+          <p className="text-gray-400 text-md mb-4">
             I'm Kieran Hardwick, a Computer Science student at the University of Liverpool, specializing in Software Development. My project portfolio, showcased below, reflects a blend of academic insights and hands-on experience.
           </p>
-          <p className="text-gray-400 text-md font-normal mb-4">
+          <p className="text-gray-400 text-md mb-4">
             {`If you're seeking a dedicated software developer to enhance your team or contribute to your projects, please contact me at `}
             <a href="mailto:kieranhardwick260@gmail.com" className="hover:underline text-blue-500">kieranhardwick260@gmail.com</a>
           </p>
 
-          <div className="inline-flex gap-2">
-            <button className="bg-background text-gray-200 hover:border-gray-200 hover:bg-white/5 transition-colors border-white/20 inline-flex justify-center text-sm items-center gap-x-2 px-4 h-10 text-center border rounded-md mb-4">About Me</button>
-            <button className="bg-background text-gray-200 hover:border-gray-200 hover:bg-white/5 transition-colors border-white/20 inline-flex justify-center text-sm items-center gap-x-2 px-4 h-10 text-center border rounded-md mb-4"><AiOutlineFileText size={18} className="text-white" />View Resume</button>
+          <div className="inline-flex gap-2 mt-2">
+            <button className="bg-background text-gray-200 hover:border-gray-200 hover:bg-white/5 transition-colors border-white/20 inline-flex justify-center text-sm items-center gap-x-2 px-4 h-10 text-center border rounded-lg mb-4"><AiOutlineFileText size={18} className="text-white" />View Resume</button>
+            <button className="bg-background text-gray-200 hover:border-gray-200 hover:bg-white/5 transition-colors border-white/20 inline-flex justify-center text-sm items-center gap-x-2 px-4 h-10 text-center border rounded-lg mb-4">Learn More</button>
           </div>
-
         </div>
 
         <div className="lg:min-w-[600px]">

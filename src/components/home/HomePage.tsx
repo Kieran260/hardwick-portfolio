@@ -8,8 +8,6 @@ const HomePage = () => {
     <div className={`bg-background ${styles.flexStart} flex flex-col`}>
       <Hero />
       <Skills />
-
-
       <Projects />
     </div>
   )

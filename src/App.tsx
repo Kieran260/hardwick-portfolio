@@ -9,7 +9,7 @@ function App() {
   return (
     <Router>
       <div className="relative font-sans ">
-        <div className={`flex flex-col ${styles.flexCenter} border-b border-white/20`}>
+        <div className={`backdrop-blur-md sticky top-0 z-50 flex flex-col ${styles.flexCenter} border-b border-white/20`}>
           <Navbar />
         </div>
 
